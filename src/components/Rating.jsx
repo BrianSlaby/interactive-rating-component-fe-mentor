@@ -7,7 +7,6 @@ export default function Rating({ children, setRating, val, rating }) {
         <div 
             className={`rating-el ${selected}`} 
             onClick={() => {
-                console.log("clicked")
                 setRating(val)
             }}> 
             {children}

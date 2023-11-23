@@ -8,8 +8,6 @@ export default function App() {
   const [rating, setRating] = React.useState(null)
   const [ratingSubmitted, setRatingSubmitted] = React.useState(false)
 
-  console.log(rating)
-
   function handleSubmitClick() {
     if (rating) {
       setRatingSubmitted(true)
@@ -42,9 +40,18 @@ export default function App() {
             handleClick={handleSubmitClick}
           >Submit</Button>
         </Card>
-        : <h1>Rating submitted</h1>
+        : 
+        <Card className="center-text">
+          <img 
+            src="../images/illustration-thank-you.svg" className="rating-confirm-img"
+          />
+          <div className="confirm-msg">
+            <p>You selected {rating} out of 5</p>
+          </div>
+          <h1>Thank you!</h1>
+          <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+        </Card>
       }
-
       
     </main>
 

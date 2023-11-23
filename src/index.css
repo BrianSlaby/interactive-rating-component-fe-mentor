@@ -12,9 +12,11 @@ body {
 }
 
 main {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 p {
@@ -24,16 +26,18 @@ p {
 .card-el {
   display: flex;
   flex-direction: column;
-  max-width: 375px;
+  width: 375px;
   background-color: rgb(23, 30, 40);
   background-image: linear-gradient(rgb(31, 38, 48), rgb(23, 30, 40));  
   color: hsl(217, 12%, 63%);
   padding: 2em;
   border-radius: 15px;
+  margin: 2em auto;
 }
 
 .card-el h1 {
   color: hsl(0, 0%, 100%);
+  margin-bottom: 0;
 }
 
 .logo-container {
@@ -91,6 +95,23 @@ p {
 .submit-btn:focus {
   background-color: hsl(0, 0%, 100%);
   color:hsl(25, 97%, 53%);
+}
+
+.confirm-msg {
+  background-color: rgb(38, 46, 58);
+  color: hsl(25, 97%, 53%);
+  padding: 0 1.2em;
+  border-radius: 25px;
+  margin: 2em auto 0;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.rating-confirm-img {
+  max-width: 50%;
+  margin: 0.5em auto;
 }
 
 footer {
