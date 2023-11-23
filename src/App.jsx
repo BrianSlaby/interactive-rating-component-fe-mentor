@@ -40,7 +40,7 @@ export default function App() {
         : 
         <Card className="center-text">
           <img 
-            src="../images/illustration-thank-you.svg" className="rating-confirm-img"
+            src="/illustration-thank-you.svg" className="rating-confirm-img"
           />
           <div className="confirm-msg">
             <p>You selected {rating} out of 5</p>
